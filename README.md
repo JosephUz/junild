@@ -19,7 +19,7 @@ nodeChild.get({
         for (var i = 0; i < 9999999999; i++) {}
 
         // Used to write any strig to console.txt.
-        this.log(message + "\n" + new Date().toISOString());
+        this.log(message + " " + new Date().toISOString());
 
         // This is end of thread. This method will close child thread and then returns parameter.
         this.end(i);
@@ -76,12 +76,16 @@ nodeChild.get({
 
 #### `this.log(message)`
 
+**Parameters:**
+
 * `message`: String message to be log.
 
 
 #### `this.end(data)`
 
 To close the node child.
+
+**Parameters:**
 
 * `data`: Optional data to be sent for the callback function.
 
