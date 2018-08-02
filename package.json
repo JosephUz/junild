@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit"
   },
   "author": "josephuz",
   "license": "MIT",
@@ -24,7 +24,8 @@
     "create new thread"
   ],
   "devDependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "child_process": "^1.0.2",
